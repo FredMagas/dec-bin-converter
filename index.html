@@ -8,13 +8,30 @@
     <script src="https://kit.fontawesome.com/21bc9e53b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="conversion-type-container">
+        <label for="conversionType">Tipo de conversão:</label>
+        <select id="conversionType" onchange="updateUnitOptions()">
+            <option value="numbers">Números</option>
+            <!-- Adicione outros tipos de conversão aqui -->
+        </select>
+    </div>
     <div class="container">
         <div class="top-container">
             <input type="text" placeholder="Decimal" oninput="converter('decimalInput', 'binaryInput')" id="decimalInput">
+            <select class="top-select" id="inputUnit">
+                <option value="decimal">Decimal</option>
+                <option value="binary">Binário</option>
+                <!-- Adicione outras unidades aqui -->
+            </select>
         </div>
         <button onclick="swapInputs()"><i class="fa-solid fa-arrow-right-arrow-left fa-rotate-90 fa-xl"></i></button>
         <div class="bottom-container">
             <input type="text" placeholder="Binário" oninput="converter('binaryInput', 'decimalInput')" id="binaryInput">
+            <select class="bottom-select" id="outputUnit">
+                <option value="binary">Binário</option>
+                <option value="decimal">Decimal</option>
+                <!-- Adicione outras unidades aqui -->
+            </select>
         </div>
     </div>
     <script src="index.js"></script>

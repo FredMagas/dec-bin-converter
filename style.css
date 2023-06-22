@@ -11,7 +11,7 @@ body {
 .top-container, .bottom-container {
     height: 50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -74,4 +74,60 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+.conversion-type-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 60%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+select {
+
+    height: 2em;
+    font-size: 1em;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border-bottom: 1.8px solid white;
+}
+
+.top-select {
+    margin: 10px;
+    height: 2em;
+    font-size: 1.5em;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.bottom-select {
+    margin: 10px;
+    height: 2em;
+    font-size: 1.5em;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    color: rgba(104,159,249,1);
 }
