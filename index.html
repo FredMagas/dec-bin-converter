@@ -10,11 +10,11 @@
 <body>
     <div class="container">
         <div class="top-container">
-            <input type="text" placeholder="Decimal" onchange="converter(this.value)" id="">
+            <input type="text" placeholder="Decimal" oninput="converter('decimalInput', 'binaryInput')" id="decimalInput">
         </div>
         <button onclick="swapInputs()"><i class="fa-solid fa-arrow-right-arrow-left fa-rotate-90 fa-xl"></i></button>
         <div class="bottom-container">
-            <input type="text" placeholder="Binário" onchange="converter(this.value)" id="">
+            <input type="text" placeholder="Binário" oninput="converter('binaryInput', 'decimalInput')" id="binaryInput">
         </div>
     </div>
     <script src="index.js"></script>
